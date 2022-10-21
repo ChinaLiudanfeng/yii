@@ -1,0 +1,162 @@
+2020-12-04 17:15:40: 
+--------->
+SQL: <br/>CREATE TABLE `zjhj_bd_aliapp_template` ( `id` int(11) NOT NULL AUTO_INCREMENT, `mall_id` int(11) NOT NULL, `tpl_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL, `tpl_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '', `created_at` timestamp(0) NULL DEFAULT NULL, `updated_at` timestamp(0) NULL DEFAULT NULL, PRIMARY KEY (`id`) USING BTREE ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Table 'zjhj_bd_aliapp_template' already exists<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 264; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:42: 
+--------->
+SQL: <br/>ALTER TABLE zjhj_bd_order_refund ADD reality_refund_price DECIMAL ( 10, 2 ) NOT NULL DEFAULT '0' COMMENT '商家实际退款金额';<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate column name 'reality_refund_price'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 404; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:42: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_goods_attr` ADD INDEX `goods_id`(`goods_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'goods_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:43: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_option` ADD INDEX `mall_id`(`mall_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mall_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:43: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_option` ADD INDEX `name`(`name`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'name'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:44: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_quick_share_goods` ADD INDEX `goods_id`(`goods_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'goods_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:44: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_share` ADD INDEX `mall_id`(`mall_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mall_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:45: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_user` ADD INDEX `mall_id`(`mall_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mall_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:45: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_user` ADD INDEX `username`(`username`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'username'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:45: 
+--------->
+SQL: <br/>ALTER TABLE  `zjhj_bd_user` ADD INDEX `access_token`(`access_token`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'access_token'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 646; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:45: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_share` ADD COLUMN `level` int(11) NOT NULL DEFAULT 0 COMMENT '分销商等级', ADD COLUMN `level_at` timestamp NULL DEFAULT '' COMMENT '成为分销商等级时间', ADD COLUMN `delete_first_show` tinyint(1) NOT NULL DEFAULT 0 COMMENT '删除后是否第一次展示';<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Invalid default value for 'level_at'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 696; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:47: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_attachment` ADD INDEX `mall_id`(`mall_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mall_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 915; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:47: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_attachment` ADD INDEX `type`(`type`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'type'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 915; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:47: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_attachment` ADD INDEX `mch_id`(`mch_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mch_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 915; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:47: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_attachment` ADD INDEX `attachment_group_id`(`attachment_group_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'attachment_group_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 915; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_mall_members` ADD INDEX `level`(`level`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'level'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_mall_members` ADD INDEX `mall_id`(`mall_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mall_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_printer_setting` ADD INDEX `mch_id`(`mch_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mch_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_printer_setting` ADD INDEX `mall_id`(`mall_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mall_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_printer_setting` ADD INDEX `status`(`status`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'status'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_printer_setting` ADD INDEX `store_id`(`store_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'store_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_order` ADD INDEX `index2`(`mall_id`,`is_delete`,`user_id`,`is_confirm`,`is_sale`,`sale_status`,`cancel_status`,`is_recycle`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'index2'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_order` ADD INDEX `index3`(`mall_id`,`is_delete`,`user_id`,`is_send`,`pay_type`,`is_pay`,`cancel_status`,`is_recycle`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'index3'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_vip_card_appoint_goods` ADD INDEX `goods_id`(`goods_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'goods_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:48: 
+--------->
+SQL: <br/>ALTER TABLE `zjhj_bd_vip_card_setting` ADD INDEX `mall_id`(`mall_id`);<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Duplicate key name 'mall_id'<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 998; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:49: 
+--------->
+SQL: <br/>CREATE TABLE `zjhj_bd_ecard_options` ( `id` int(11) NOT NULL AUTO_INCREMENT, `mall_id` int(11) NOT NULL, `token` varchar(255) NOT NULL DEFAULT '' COMMENT '加密字符串', `ecard_id` int(11) NOT NULL DEFAULT '0' COMMENT '电子卡密id', `value` longtext NOT NULL COMMENT '卡密字段值', `is_delete` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否删除', `is_sales` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否出售', `created_at` timestamp NOT NULL, `updated_at` timestamp NOT NULL, `deleted_at` timestamp NOT NULL, `is_occupy` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否被占用 0--否 1--是', PRIMARY KEY (`id`), KEY `e_card_id` (`ecard_id`), KEY `token` (`token`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='电子卡密数据';<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Table 'zjhj_bd_ecard_options' already exists<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 1085; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
+2020-12-04 17:15:49: 
+--------->
+SQL: <br/>CREATE TABLE `zjhj_bd_ecard_options` ( `id` int(11) NOT NULL AUTO_INCREMENT, `mall_id` int(11) NOT NULL, `token` varchar(70) NOT NULL DEFAULT '' COMMENT '加密字符串', `ecard_id` int(11) NOT NULL DEFAULT '0' COMMENT '电子卡密id', `value` longtext NOT NULL COMMENT '卡密字段值', `is_delete` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否删除', `is_sales` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否出售', `created_at` timestamp NOT NULL, `updated_at` timestamp NOT NULL, `deleted_at` timestamp NOT NULL, `is_occupy` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否被占用 0--否 1--是', PRIMARY KEY (`id`), KEY `e_card_id` (`ecard_id`), KEY `token` (`token`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='电子卡密数据';<hr/>Params: <br/>array (
+)<hr/>SQL Error: <br/>Table 'zjhj_bd_ecard_options' already exists<hr/>Traces: <br/>file: /framework/class/db.class.php; line: 396; <br />file: /framework/class/db.class.php; line: 94; <br />file: /framework/class/db.class.php; line: 311; <br />file: /framework/function/pdo.func.php; line: 120; <br />file: /addons/zjhj_bd/upgrade.php; line: 52; <br />file: /addons/zjhj_bd/versions.php; line: 1092; <br />file: /addons/zjhj_bd/upgrade.php; line: 140; <br />file: /framework/model/extension.mod.php; line: 682; <br />file: /web/source/module/manage-system.ctrl.php; line: 423; <br />file: /web/index.php; line: 130; <br />file: /Users/wuxuefeng/.composer/vendor/laravel/valet/server.php; line: 191; <br />
+<---------
+
