@@ -56,7 +56,7 @@ class WechatChangeController
         curl_setopt($ch,CURLOPT_SSLCERT,'/home/wwwroot/maiji/runtime/pem/15fd8f2b92f4a0a4d045d7498273ab08'); //这个是证书的位置绝对路径
         curl_setopt($ch,CURLOPT_SSLKEY,'/home/wwwroot/maiji/runtime/pem/64ebd66ac53c9defb1b7946f0b6bda46'); //这个也是证书的位置绝对路径
         $data = curl_exec($ch);                                 //运行curl
-        curl_close($ch);
+        curl_close($ch);cd
         return $data;
     }
 
@@ -84,7 +84,7 @@ class WechatChangeController
         ];
 
         $xml=$this->arraytoxml($data);
-
+echo "<pre>"; var_dump($data);
         $url='https://api.mch.weixin.qq.com/v3/transfer/batchess'; //调用接口
         $res=$this->curl($xml,$url);
         $return=$this->xmltoarray($res);
