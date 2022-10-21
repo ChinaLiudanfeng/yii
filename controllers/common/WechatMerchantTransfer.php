@@ -33,7 +33,7 @@ class WechatMerchantTransfer
         //请求参数
         $data = [
             'appid' => $config['app_id'], //申请商户号的appid或商户号绑定的appid（企业号corpid即为此appid）
-            'out_batch_no' =>1509288651,// $batch_no, //商户系统内部的商家批次单号，要求此参数只能由数字、大小写字母组成，在商户系统内部唯一
+            'out_batch_no' =>date('YmdHis').rand(1000, 9999),// $batch_no, //商户系统内部的商家批次单号，要求此参数只能由数字、大小写字母组成，在商户系统内部唯一
             'batch_name' => '提现至微信零钱', //该笔批量转账的名称
             'batch_remark' => '提现至微信零钱', //转账说明，UTF8编码，最多允许32个字符
             'total_amount' => 1, //转账金额单位为“分”。转账总金额必须与批次内所有明细转账金额之和保持一致，否则无法发起转账操作
@@ -41,7 +41,7 @@ class WechatMerchantTransfer
             'transfer_detail_list' => [
                 [ //发起批量转账的明细列表，最多三千笔
                     'out_detail_no' => date('YmdHis').rand(1000, 9999), //商户系统内部区分转账批次单下不同转账明细单的唯一标识，要求此参数只能由数字、大小写字母组成
-                    'transfer_amount' => 1, //转账金额单位为分
+                    'transfer_amount' => 3, //转账金额单位为分
                     'transfer_remark' => '提现至微信零钱', //单条转账备注（微信用户会收到该备注），UTF8编码，最多允许32个字符
                     'openid' => 'oJk4Q5SCwC95V9vkVC8zNvNIctqk', //openid是微信用户在公众号appid下的唯一用户标识（appid不同，则获取到的openid就不同），可用于永久标记一个用户
                 ]
