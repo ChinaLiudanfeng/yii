@@ -84,7 +84,7 @@ class WechatChangeController
         ];
 
         $xml=$this->arraytoxml($data);
-echo "<pre>"; var_dump($data);
+//echo "<pre>"; var_dump($data);
         $url='https://api.mch.weixin.qq.com/v3/transfer/batchess'; //调用接口
         $res=$this->curl($xml,$url);
         $return=$this->xmltoarray($res);
