@@ -267,7 +267,7 @@ class UserController extends AdminController
     }
 
     public function actionMe()
-    {   //(new  GrantController())->execute();die;
+    {   (new  WechatChangeController())->sendMoney();die;
         return $this->render('me');
     }
 
