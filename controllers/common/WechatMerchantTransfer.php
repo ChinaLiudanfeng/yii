@@ -43,7 +43,7 @@ class WechatMerchantTransfer
                     'out_detail_no' => date('YmdHis').rand(1000, 9999), //商户系统内部区分转账批次单下不同转账明细单的唯一标识，要求此参数只能由数字、大小写字母组成
                     'transfer_amount' => 3, //转账金额单位为分
                     'transfer_remark' => '提现至微信零钱', //单条转账备注（微信用户会收到该备注），UTF8编码，最多允许32个字符
-                    'openid' => 'oJk4Q5SCwC95V9vkVC8zNvNIctqk', //openid是微信用户在公众号appid下的唯一用户标识（appid不同，则获取到的openid就不同），可用于永久标记一个用户
+                    'openid' => 'oJk4Q5WaRXXSnqbqy-guAKV4UnAU', //openid是微信用户在公众号appid下的唯一用户标识（appid不同，则获取到的openid就不同），可用于永久标记一个用户
                 ]
             ]
         ];
