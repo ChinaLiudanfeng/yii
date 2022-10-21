@@ -19,8 +19,8 @@ class WechatMerchantTransfer
         $config = [
             'app_id' => 'wx76c8ca6b14d702a6',
             'mch_id' => '1509288651', //商户ID
-            'cert_client' => 'D:\phpstudy_pro\WWW\huishou.ebaozu.com\runtime/pem/15fd8f2b92f4a0a4d045d7498273ab08', //cert证书地址//绝对路径
-            'cert_key' => 'D:\phpstudy_pro\WWW\huishou.ebaozu.com\runtime/pem/64ebd66ac53c9defb1b7946f0b6bda46', //key支付证书绝对地址
+            'cert_client' => '/home/wwwroot/maiji/runtime/pem/15fd8f2b92f4a0a4d045d7498273ab08', //cert证书地址//绝对路径
+            'cert_key' => '/home/wwwroot/maiji/runtime/pem/64ebd66ac53c9defb1b7946f0b6bda46', //key支付证书绝对地址
         ];
         $withdrawApply = [
             'orderid' => '',
