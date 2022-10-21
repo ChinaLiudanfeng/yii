@@ -58,7 +58,6 @@ class GrantController
                 $naamData[] = [
                     'mall_id' => $value['mall_id'],
                     'order_id' => $value['order_id'],
-                    'commission_id' => $value['id'],
                     'naam_money' => $naamPrice,
                     'create_time' => time()
                 ];
@@ -71,7 +70,7 @@ class GrantController
 //        epd($successData);
         if(!empty($successData))  updateAll('zjhj_bd_commission_issued',$successData);
         // 批量更改 平台扣取流水表
-        if (!empty($naamData)) saveAll('zjhj_bd_naam', ['mall_id', 'order_id', 'commission_id', 'naam_money', 'create_time'], $naamData);
+        if (!empty($naamData)) saveAll('zjhj_bd_naam', ['mall_id', 'order_id', 'naam_money', 'create_time'], $naamData);
 
 
 
