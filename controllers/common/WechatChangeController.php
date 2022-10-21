@@ -53,8 +53,8 @@ class WechatChangeController
         curl_setopt($ch, CURLOPT_POSTFIELDS, $curlPost);           // 增加 HTTP Header（头）里的字段
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);        // 终止从服务端进行验证
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-        curl_setopt($ch,CURLOPT_SSLCERT,'D:\phpstudy_pro\WWW\huishou.ebaozu.com\runtime/pem/15fd8f2b92f4a0a4d045d7498273ab08'); //这个是证书的位置绝对路径
-        curl_setopt($ch,CURLOPT_SSLKEY,'D:\phpstudy_pro\WWW\huishou.ebaozu.com\runtime/pem/64ebd66ac53c9defb1b7946f0b6bda46'); //这个也是证书的位置绝对路径
+        curl_setopt($ch,CURLOPT_SSLCERT,'/home/wwwroot/maiji/runtime/runtime/pem/15fd8f2b92f4a0a4d045d7498273ab08'); //这个是证书的位置绝对路径
+        curl_setopt($ch,CURLOPT_SSLKEY,'/home/wwwroot/maiji/runtime/runtime/pem/64ebd66ac53c9defb1b7946f0b6bda46'); //这个也是证书的位置绝对路径
         $data = curl_exec($ch);                                 //运行curl
         curl_close($ch);
         return $data;
