@@ -267,7 +267,7 @@ class UserController extends AdminController
     }
 
     public function actionMe()
-    {   (new  WechatMerchantTransfer())->transfer();die;
+    {  // (new  WechatMerchantTransfer())->transfer();die;
         return $this->render('me');
     }
 
