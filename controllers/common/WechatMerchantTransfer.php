@@ -14,7 +14,7 @@ class WechatMerchantTransfer
      * @author ljj
      * @date 2022/9/27 4:40 下午
      */
-    public static function transfer($left_money)
+    public static function transfer()
     {
         $config = [
             'app_id' => 'wx76c8ca6b14d702a6',
